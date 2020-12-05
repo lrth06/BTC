@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { ReactComponent as Bitcoin } from "./Icons/Bitcoin.svg";
 function BTC() {
   const [data, setData] = useState(null);
   const [value, setValue] = useState(null);
@@ -38,7 +39,9 @@ function BTC() {
 
   return (
     <div>
-      <p>Current BTC Value in USD: {data}</p>
+      <p>
+        Current <Bitcoin /> Value in USD: ${data}
+      </p>
       <p>
         Current BTC value of ${amount} USD: {value}
       </p>
