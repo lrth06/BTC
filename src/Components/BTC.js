@@ -39,14 +39,17 @@ function BTC() {
 
   return (
     <div>
-      <p>
-        Current <Bitcoin /> Value in USD: ${data}
-      </p>
-      <p>
-        Current BTC value of ${amount} USD: {value}
-      </p>
-      <input value={amount} onChange={changeAmount}></input>
-      <button onClick={handleClick}>Convert!</button>
+      <div className="glass">
+        <p>
+          Current <Bitcoin /> Value in USD: ${data}
+        </p>
+        <p>
+          Current BTC value of ${amount} USD: {value}
+        </p>
+        <input value={amount} onChange={changeAmount}></input>
+        <button onClick={handleClick}>Convert!</button>
+      </div>
+      <div className="circle" />
     </div>
   );
 }
